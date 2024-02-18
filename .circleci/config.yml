@@ -96,6 +96,7 @@ jobs:
           command: |
             npm audit fix --force
             npm audit fix --force --audit-level=critical
+            npm update
 
 
   deploy-infrastructure:
