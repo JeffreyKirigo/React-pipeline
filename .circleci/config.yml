@@ -57,7 +57,6 @@ jobs:
       - run:
           name: Install dependencies & Build front-end
           command: |
-            cd Albumz
             npm install
             npm run build
       - save_cache:
@@ -75,7 +74,6 @@ jobs:
       - run:
           name: test-front-end
           command: |
-            cd Albumz
             npm install
             npm run test
 
@@ -90,7 +88,6 @@ jobs:
       - run:
           name: scan-frontend
           command: |
-            cd Albumz
             npm install
             npm audit fix --force
             npm audit fix --force --audit-level=critical
